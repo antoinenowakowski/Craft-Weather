@@ -5,7 +5,7 @@ from datetime import *
 lat = 48.433982
 lon = 0.082475
 lang = 'fr'
-api_key = 'f49b123dc74107df107f6d559cdd331b'
+api_key = ''
 
 url =f'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&cnt=8&lang={lang}&appid={api_key}&units=metric'
 
