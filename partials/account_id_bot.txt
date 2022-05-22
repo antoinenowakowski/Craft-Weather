@@ -1,0 +1,10 @@
+
+discord:
+
+app id : 976207795160502302
+public key : 3b25800ed8a9359b626d92adc6ed9faef2e2e836b3bb5f1c7a7cc2f07ab00442
+token : OTc2MjA3Nzk1MTYwNTAyMzAy.GdAXsK.P_CcBZQGT-iIOpRg4DqmvCCXBX2adGG-4DQEmc
+
+wheather api:
+
+api key : f49b123dc74107df107f6d559cdd331b
