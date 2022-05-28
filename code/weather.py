@@ -1,26 +1,26 @@
 import requests
-import json
-from datetime import *
+
+
 
 lat = 48.433982
 lon = 0.082475
+<<<<<<< HEAD
+api_key = 'f49b123dc74107df107f6d559cdd331b'
+url = f'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&cnt=8&appid={api_key}&units=metric'
+r = requests.get(url).json() # get l'url
+=======
 lang = 'fr'
 api_key = ''
+>>>>>>> f55ae7762e4efa7726ab47cbe10382a7a45e0f81
 
-url =f'https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&cnt=8&lang={lang}&appid={api_key}&units=metric'
+def get_temp(j):
+    return r['list'][j]['main']['temp']
 
-r = requests.get(url).json() # get l'url
-print(r)
-today = date.today()
-get_time = r['list'][0]['dt_txt']
+def get_weather(k):
+    return r['list'][int(k)]['weather'][0]['main']
 
-now = datetime.now()
-current_time = now.strftime("%H")
+def get_clouds(l):
+    return r['list'][int(l)]['weather'][0]['description']
 
-def when(x):
-    if get_time == f'{today} 0{x}:00:00':
-        print("ok")
-    elif get_time == f'{today} {x}:00:00':
-        print("ok")
-    else:
-        print('nop')
+def  get_speed_wind(m):
+    return r['list'][int(m)]['wind']['speed']
